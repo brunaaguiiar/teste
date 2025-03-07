@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: cornsilk;
+    padding: 50px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    display: none;
+}
+
+.frase {
+    display: none;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+
+input:checked+.frase {
+    display: block;
+}
+
+.seletor {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+input:checked+.frase+.seletor label {
+    background-color: aqua;
+}
